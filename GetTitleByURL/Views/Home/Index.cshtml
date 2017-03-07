@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" charset="utf-8" />
+        <title>Home page</title>
+        <script src="~/scripts/jquery-3.1.1.js"></script>
+        <style type="text/css">
+            table {
+                width: 500px;
+                border-collapse: collapse;
+                margin-top: 3px;
+            }
+
+            td {
+                padding: 3px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <textarea id="myTextArea" rows="5" cols="60" placeholder="Введите сюда URL адреса, каждый с новой строки.">/Home/FirstPage&#13;&#10;/Home/SecondPage&#13;&#10;/Home/UnexistingPage</textarea>
+            <br />
+            <button id="myButton">Получить информацию</button>
+        </div>
+        <div id="tableResult"></div>
+        <script src="~/scripts/GetTitleByURL.js"></script>
+    </body>
+</html>
